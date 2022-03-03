@@ -1,0 +1,95 @@
+@import "../../../../settings/sass/abstracts/variables";
+
+.banner {
+  height: 85vh;
+  color: $color-white;
+  line-height: 3rem;
+  background-image: linear-gradient(to right, $color-black, rgba($color-white, 0)),
+    url("/assets/images/bg-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  .text-accent {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+  .heading-primary {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  .paragraph {
+    font-size: 1.9rem;
+  }
+
+  .busines {
+    display: flex;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 7rem;
+
+    svg{
+      width: 7rem;
+      cursor: pointer;
+    }
+
+    &-link {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+  }
+
+
+
+  .svg-path{
+    fill: $color-white;
+  }
+
+  .svg-path-accent{
+    fill: $color-accent;
+  }
+
+  .svg-path-primary{
+    fill: $color-primary;
+  }
+
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    img {
+      transform: translateY(-5rem);
+      width: 80%;
+      border-bottom: .5rem solid rgba($color-section-bg-dark, 0.4);
+      border-radius: 24% 76% 47% 53% / 25% 26% 74% 100% ;
+    }
+  }
+
+  .btn-contrib {
+    width: 85%;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}

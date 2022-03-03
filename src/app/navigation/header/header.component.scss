@@ -1,0 +1,89 @@
+@import "../../../settings/sass/abstracts/variables";
+
+.icon-wrap{
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.icon{
+  height: 4rem;
+  width: 4rem;
+
+  &:not(:last-child){
+    margin-right: 1rem;
+  }
+
+  svg{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.toolbar-huge {
+    position: relative;
+    color: $color-white;
+    background: $color-section-bg;
+    height: 16rem;
+    
+}
+
+
+.container{
+    display: flex;
+}
+
+.nav-top{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link{
+  color: $color-white;
+  text-decoration: none;
+
+  &:visited{
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+
+.main-toolbar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $color-section-bg-dark;
+  color: $color-white;
+  width: 100%;
+
+  & button{
+    font-size: $default-font-size;
+    font-weight: 500;
+  }
+
+  & button span{
+
+    margin-left: 2rem;
+
+  }
+}
+
+.main-logo{
+  cursor: pointer;
+    width: 15rem;
+    transform: translate(-3rem,2.4rem);
+
+    border-radius: 8px;
+}
+
+.btn{
+    font-weight: 600;
+}
+
+.nav-content-wrapper{
+  display: flex;
+  align-items: center;
+}

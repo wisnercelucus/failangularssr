@@ -1,0 +1,30 @@
+@import "../../../../settings/sass/abstracts/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+
+  .heading-secondary {
+    text-align: center;
+    color: $color-white;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow:inherit;
+    margin-top: 5rem;
+    //border: 1px solid red;
+    
+    justify-content: space-between;
+
+    .my-card{
+        width: min(32rem, 95%);
+        margin-bottom: 4rem;
+    }
+
+  }
+}
